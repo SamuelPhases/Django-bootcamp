@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Count Page</title>
+</head>
+<body>
+    <h1>COUNT</h1>
+
+    <h3>Your text has  {{ count }} words</h3>
+
+    <p>{{ fulltext }}</p>
+
+    {% for word, count in worddictionary %}
+        <h2>{{ word }} - {{ count }} times</h2>
+    {% endfor %}
+
+</body>
+</html>

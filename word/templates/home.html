@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+</head>
+<body>
+
+    <h1>WORD COUNT APP</h1>
+    <form method="post" action="{% url 'count' %}">
+        {% csrf_token %}
+        <textarea name="plainText" cols="30" rows="10"></textarea><br>
+        <button type="submit">COUNT</button>
+
+    </form>
+{#    <h1>My {{ name }} Home Page</h1>#}
+{#    <h2>{{ greeting }}</h2>#}
+
+
+
+{#    {% for foo in list %}#}
+{#        <li>{{ foo }}</li>#}
+{#    {% endfor %}#}
+
+</body>
+</html>
